@@ -18,7 +18,7 @@ interface IProps {
 const ModalGallery = (props: IProps) => {
     const { isOpen, setIsOpen, currentIndex, items, title } = props
     const [activeIndex, setActiveIndex] = useState(0);
-    const refGallery = useRef<ImageGallery | null>(null);
+    const refGallery = useRef<ImageGallery>(null);
 
     useEffect(() => {
         if (isOpen) {
