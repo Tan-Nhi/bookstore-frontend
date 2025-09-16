@@ -247,6 +247,7 @@ const TableBook = () => {
                 headerTitle="Table book"
                 toolBarRender={() => [
                     <CSVLink
+
                         data={currentDataTable}
                         filename='export-book.csv'
                     >
@@ -256,7 +257,7 @@ const TableBook = () => {
                         >
                             Export
                         </Button>
-                    </CSVLink>,
+                    </CSVLink > as unknown as JSX.Element,
 
 
                     <Button

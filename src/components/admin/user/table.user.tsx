@@ -249,7 +249,7 @@ const TableUser = () => {
                         >
                             Export
                         </Button>
-                    </CSVLink>,
+                    </CSVLink> as unknown as JSX.Element,
 
 
                     <Button
