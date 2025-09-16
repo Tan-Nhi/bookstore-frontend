@@ -33,7 +33,7 @@ const BookDetail = (props: IProps) => {
     const [isOpenModalGallery, setIsOpenModalGallery] = useState<boolean>(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const refGallery = useRef<ImageGallery>(null);
+    const refGallery = useRef<any>(null);
 
     useEffect(() => {
         if (currentBook) {
